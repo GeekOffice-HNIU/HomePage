@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" />
+<title>极客，科技美学缔造者</title>
+</head>
+
+<body style="background:url(images/bj2.jpg) top center no-repeat;">
+<div class="con">
+  <header>
+    <div class="logo">
+      <div class="fl"><img src="images/GEEK.png"  width="80"/></div>
+      <h1>极客，科技美学缔造者</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首页 </a></li>
+        <li><a href="page1.html">业务介绍 </a></li>
+        <li><a href="page2.html">工作室历程 </a></li>
+        <li><a href="page3.html">关于我们 </a></li>
+        <li><a href="page4.html">加入我们 </a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
+  <div class="clear"></div>
+  <div class="main">
+    <h2>工作室历程</h2>
+    <script src="js/jquery.min.js"></script>
+<script src="js/jquery_flexslider.js"></script>
+
+<div class="about-history" id="fzlc">
+    
+    <div class="about-history-list wow zoomIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">		
+        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+            <ul class="slides clearfix list" style="width: 2600%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                <li style="width: 253px; float: left; display: block;">
+                    <div class="item">
+                        <h3>2021</h3>
+                        <div class="desc">
+                            <p>
+                            极客，对技术完美的巅峰永不止步                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                    <div class="item">
+                        <h3>2021</h3>
+                        <div class="desc">
+                            <p>
+2021年6月29日工作室成立
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                    <div class="item">
+                        <h3>2021</h3>
+                        <div class="desc">
+                            <p>2021年7月1日我们开展软件外包、平面设计、影视后期、微信公众号运营四大服务
+</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                    <div class="item">
+                        <h3>2021</h3>
+                        <div class="desc">
+                            <p>2021年7月2日工作室成员达到四个
+</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                    <div class="item">
+                        <h3>未来</h3>
+                        <div class="desc">
+                            <p>未来，我们将打造方便、快捷、高品质的一系列互联网服务</p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li style="width: 253px; float: left; display: block;"></li>
+            </ul>
+        </div>
+        <ul class="flex-direction-nav">
+            <li class="flex-nav-prev"><a class="flex-prev" href="#">&lt;</a></li>
+            <li class="flex-nav-next"><a class="flex-next" href="#">&gt;</a></li>
+         </ul>
+    </div>
+ 
+</div>
+
+<script>
+	$(function(){
+		if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))){
+			//phone
+		}else{
+			//PC
+			$(".about-history-list").flexslider({animation:"slide",slideshow:false,controlNav:false,itemWidth:253,itemMargin:31,prevText:"<",nextText:">",move:1});
+		}
+	});
+</script>
+</div>
+    <p></p>
+    <p></p>
+  </div>
+  <div class="clear"></div>
+  <footer>
+    <p>Copyright ： 极客工作室</p>
+    <p>All Rights Reserved</p>
+  </footer>
+  <div class="clear"></div>
+</div>
+</body>
+</html>

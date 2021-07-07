@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" />
+<title>极客，科技美学缔造者</title>
+</head>
+
+<body style="background:url(images/bj4.jpg) top center no-repeat;">
+<div class="con">
+  <header>
+    <div class="logo">
+      <div class="fl"><img src="images/GEEK.png"  width="80"/></div>
+      <h1>极客，科技美学缔造者</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首页 </a></li>
+        <li><a href="page1.html">业务介绍 </a></li>
+        <li><a href="page2.html">工作室历程 </a></li>
+        <li><a href="page3.html">关于我们 </a></li>
+        <li><a href="page4.html">加入我们 </a></li>
+        <li><a href="yanzhen.html">小游戏 </a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
+  <div class="clear"></div>
+  <div class="main">
+    <h2>加入我们</h2>
+     <form action="#" method="post" onSubmit="return checksub()">
+    <div class="zhuce" >
+      <div class="zhuce_info">邮箱：
+        <input class="input"   name="title" id="title"/>
+      </div>
+      <div class="zhuce_info">内容：
+        <textarea  class="textarea" name="content" id="content"></textarea>
+      </div>
+      <div class="subout">
+        <input  type="submit" value="提交" class="sub" />
+        <input   value="重置"  name="重置"type="reset" class="sub" />
+      </div>
+    </div>
+    <div class="clear"></div>
+  </form>
+  <script>
+function checksub(){
+
+var title = document.getElementById("title").value;
+var content = document.getElementById("content").value;
+if(title == ""){
+window.alert("请输入邮箱");
+return false;
+
+}else if(content == "")
+
+{
+	window.alert("请输入内容");
+
+return false;
+}
+
+}
+
+</script>
+  <p></p>
+    <p></p>
+  </div>
+</div>
+<div class="clear"></div>
+<footer>
+  <p>Copyright ： 极客工作室</p>
+  <p>All Rights Reserved</p>
+</footer>
+<div class="clear"></div>
+</div>
+</body>
+</html>

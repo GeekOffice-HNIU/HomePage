@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" />
+<title>极客，科技美学缔造者</title>
+</head>
+
+<body  onload="time()">
+<div class="con">
+  <header>
+    <div class="logo">
+      <div class="fl"><img src="images/GEEK.png"  width="80"/></div>
+      <h1>极客，科技美学缔造者</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首页 </a></li>
+        <li><a href="page1.html">业务介绍 </a></li>
+        <li><a href="page2.html">工作室历程 </a></li>
+        <li><a href="page3.html">关于我们 </a></li>
+        <li><a href="page4.html">加入我们 </a></li>
+        <li><a href="yanzhen.html">小游戏 </a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
+  <div class="clear"></div>
+  <div class="main">
+    <h2></h2>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> <script type="text/javascript" src="js/koala.min.1.5.js"></script> 
+    <!-- 代码 开始 -->
+    <div id="fsD1" class="focus">
+      <div id="D1pic1" class="fPic">
+        <div class="fcon" style="display: none;"> <a  href="#"><img src="images/banner1.jpg" style="opacity: 1; "></a> <span class="shadow"><a  href="#">极客工作室</a></span> </div>
+        <div class="fcon" style="display: none;"> <a  href="#"><img src="images/banner2.jpg" style="opacity: 1; "></a> <span class="shadow"><a  href="#">极客工作室</a></span> </div>
+        <div class="fcon" style="display: none;"> <a  href="#"><img src="images/banner3.jpg" style="opacity: 1; "></a> <span class="shadow"><a  href="#">极客工作室</a></span> </div>
+        <div class="fcon" style="display: none;"> <a  href="#"><img src="images/banner4.jpg" style="opacity: 1; "></a> <span class="shadow"><a  href="#">极客工作室</a></span> </div>
+        <div class="fcon" style="display: none;"> <a  href="#"><img src="images/banner5.jpg" style="opacity: 1; "></a> <span class="shadow"><a  href="#">极客工作室</a></span> </div>
+      </div>
+      <div class="fbg">
+        <div class="D1fBt" id="D1fBt"> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>4</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>5</i></a> </div>
+      </div>
+      <span class="prev"></span> <span class="next"></span> </div>
+    <script type="text/javascript">
+	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script> 
+    <!-- 代码 结束 --> 
+    
+  </div>
+  <p></p>
+  <p></p>
+    <div id="showtime" style="font-size:16px; color:#ccc; margin:20px; float:right;"> 
+      <script language=Javascript> 
+  function time(){
+    //获得显示时间的div
+    t_div = document.getElementById('showtime');
+   var now=new Date()
+    //替换div内容 
+   t_div.innerHTML = "现在报时："+now.getFullYear()
+    +"年"+(now.getMonth()+1)+"月"+now.getDate()
+    +"日"+now.getHours()+"时"+now.getMinutes()
+    +"分"+now.getSeconds()+"秒";
+    //等待一秒钟后调用time方法，由于settimeout在time方法内，所以可以无限调用
+   setTimeout(time,1000);
+  }
+</script></div>
+</div>
+<div class="clear"></div>
+<footer>
+  <p>Copyright ： 极客工作室</p>
+  <p>All Rights Reserved</p>
+</footer>
+<div class="clear"></div>
+</div>
+</body>
+</html>
